@@ -79,8 +79,8 @@ If you try your game out right now, it should play music!
 7. And then, similarly to how we setup the `Player` class, add this to our constructor:
 
 	```haxe
-	_sndStep = FlxG.sound.load(AssetPaths.step__wav,.4);
-	_sndStep.proximity(x,y,FlxG.camera.target, FlxG.width *.6);
+	_sndStep = FlxG.sound.load(AssetPaths.step__wav, .4);
+	_sndStep.proximity(x, y, FlxG.camera.target, FlxG.width *.6);
 	```
 
 	You'll notice that we are setting the volume to `.4` (40%) this is because there will be plenty of enemies on the map, and there footsteps can get kind of annoying and loud (besides, they're probably walking around the dungeon barefoot, right?).
@@ -119,7 +119,7 @@ If you try your game out right now, it should play music!
 
 	This time we will use `forceRestart` so that if the player happens to pickup several coins close to each other the sound will keep up with them.
 
-12. All of the rest of our sounds, because they deal with combat, will be in our `CombatHUD` class.
+10. All of the rest of our sounds, because they deal with combat, will be in our `CombatHUD` class.
 
 	To initialize them:
 
