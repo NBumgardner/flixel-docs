@@ -80,7 +80,7 @@ If you try your game out right now, it should play music!
 
 	```haxe
 	_sndStep = FlxG.sound.load(AssetPaths.step__wav, .4);
-	_sndStep.proximity(x, y, FlxG.camera.target, FlxG.width *.6);
+	_sndStep.proximity(x, y, FlxG.camera.target, FlxG.width * .6);
 	```
 
 	You'll notice that we are setting the volume to `.4` (40%) this is because there will be plenty of enemies on the map, and there footsteps can get kind of annoying and loud (besides, they're probably walking around the dungeon barefoot, right?).
